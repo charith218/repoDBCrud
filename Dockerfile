@@ -22,7 +22,7 @@ FROM eclipse-temurin:21-jre
 WORKDIR /app
 
 # Copy the built JAR from build stage
-COPY --from=build /app/target/employeedb.war app.war
+COPY --from=build /app/target/mobiledb.war app.war
 
 # Expose the application port
 EXPOSE 8090
